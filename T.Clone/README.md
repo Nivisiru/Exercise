@@ -50,6 +50,7 @@ def do_logout():
     if CURR_USER_KEY in session:
         del session[CURR_USER_KEY]
 
+
 **Step Three: Fix User Profile Display**
 The user profile page rendered correctly, but several user attributes were not being displayed:
 
@@ -58,7 +59,8 @@ User bio was not displayed
 User location was not displayed
 The template contained placeholder content instead of user data.
 
-These issues were located in:templates/users/detail.html
+These issues were located in:
+templates/users/detail.html
 
 The header image was empty:
 <div id="warbler-hero" class="full-width"></div>
